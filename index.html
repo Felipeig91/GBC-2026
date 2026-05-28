@@ -1,293 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="BackupCode Soluciones IT: infraestructura, datos y seguridad para empresas modernas.">
-  <title>BackupCode Soluciones IT</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <div class="site-wrap">
-    <header class="site-header">
-      <div class="container nav-row">
-        <a class="brand" href="#inicio" aria-label="BackupCode">
-          <span class="brand-icon" aria-hidden="true">
-            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M32 4L53 16V48L32 60L11 48V16L32 4Z" stroke="currentColor" stroke-width="4"/>
-              <path d="M22 23V41L32 47L42 41V23L32 17L22 23Z" fill="currentColor" opacity="0.18"/>
-              <path d="M28 23L40 29V41" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-          <span class="brand-label">
-            <strong>BACKUPCODE</strong>
-            <small>SOLUCIONES IT</small>
-          </span>
-        </a>
-
-        <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"></button>
-
-        <nav id="menu" class="menu">
-          <a class="active" href="#inicio">Inicio</a>
-          <a href="#soluciones">Soluciones</a>
-          <a href="#casos">Casos de éxito</a>
-          <a href="#nosotros">Nosotros</a>
-          <a href="#blog">Blog</a>
-          <a href="#contacto">Contacto</a>
-        </nav>
-
-        <a class="btn btn-primary nav-cta" href="#contacto">Agenda una reunión</a>
-
-        <button class="theme-toggle" aria-label="Cambiar tema" aria-pressed="false" title="Cambiar tema">
-          <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
-              <path d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-          </span>
-          <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 1 0 10.5 10.5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-            </svg>
-          </span>
-        </button>
-      </div>
-    </header>
-
-    <main>
-      <section class="hero" id="inicio">
-        <div class="container hero-grid">
-          <div class="hero-copy" data-reveal>
-            <span class="tagline">Expertos en soluciones IT</span>
-            <h1>Infraestructura, datos y seguridad para empresas <span>modernas</span></h1>
-            <p>Diseñamos, implementamos y gestionamos soluciones tecnológicas que conectan, protegen y hacen crecer tu negocio.</p>
-
-            <div class="hero-buttons">
-              <a class="btn btn-primary" href="#soluciones">Conocer soluciones</a>
-              <a class="btn btn-outline" href="#contacto">Agenda una reunión</a>
-            </div>
-
-            <ul class="quick-facts">
-              <li>+15 años de experiencia</li>
-              <li>Cobertura nacional</li>
-              <li>Soporte 24/7</li>
-              <li>Partners certificados</li>
-            </ul>
-          </div>
-
-          <div class="hero-media" data-reveal>
-            <div class="metric metric-a">
-              <span>Performance</span>
-              <strong>+32.4%</strong>
-            </div>
-            <div class="metric metric-b">
-              <span>Storage</span>
-              <strong>8.52 TB</strong>
-            </div>
-            <div class="metric metric-c">
-              <span>Resolución</span>
-              <strong>2.430</strong>
-            </div>
-            <div class="hero-platform">
-              <span class="ring"></span>
-              <span class="ring ring-2"></span>
-              <span class="badge-icon">
-                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M50 7L82 25V61L50 79L18 61V25L50 7Z" stroke="white" stroke-width="6"/>
-                  <path d="M37 34V62L50 69L63 62V34L50 27L37 34Z" fill="white" opacity="0.22"/>
-                  <path d="M43 34L64 46V62" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="soluciones">
-        <div class="container">
-          <div class="section-header" data-reveal>
-            <span class="tagline">Nuestras áreas de solución</span>
-            <h2>Tres áreas, un mismo propósito: impulsar <span>tu negocio.</span></h2>
-          </div>
-
-          <div class="service-grid">
-            <article class="service-card" data-reveal>
-              <div class="service-cover cover-analytics"></div>
-              <div class="service-body">
-                <h3>Bcode<span>Analytics</span></h3>
-                <p>Convertimos tus datos en decisiones inteligentes con analítica avanzada, BI e inteligencia artificial.</p>
-                <ul>
-                  <li>Business Intelligence</li>
-                  <li>Analítica de Datos</li>
-                  <li>Inteligencia Artificial</li>
-                  <li>Dashboards y Visualización</li>
-                  <li>Gobierno y Calidad de Datos</li>
-                </ul>
-                <a href="#contacto">Explorar Analytics</a>
-              </div>
-            </article>
-
-      <button class="scroll-top" aria-label="Volver arriba">↑</button>
-
-
-            <article class="service-card" data-reveal>
-              <div class="service-cover cover-infra"></div>
-              <div class="service-body">
-                <h3>Instalaciones</h3>
-                <p>Diseñamos e implementamos infraestructura tecnológica robusta, segura y de alto rendimiento.</p>
-                <ul>
-                  <li>Cableado Estructurado</li>
-                  <li>Redes Inalámbricas</li>
-                  <li>Fibra Óptica</li>
-                  <li>Control de Acceso</li>
-                  <li>CCTV y Video Vigilancia</li>
-                </ul>
-                <a href="#contacto">Ver infraestructura</a>
-              </div>
-            </article>
-
-            <article class="service-card" data-reveal>
-              <div class="service-cover cover-security"></div>
-              <div class="service-body">
-                <h3>Soluciones TI</h3>
-                <p>Soluciones integrales para garantizar continuidad, seguridad y eficiencia de tu operación.</p>
-                <ul>
-                  <li>Servidores y Hardware</li>
-                  <li>Virtualización</li>
-                  <li>Backup y Recuperación</li>
-                  <li>Acronis Cyber Protect</li>
-                  <li>Microsoft 365 y Licenciamiento</li>
-                </ul>
-                <a href="#contacto">Conocer soluciones TI</a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section reason" id="nosotros">
-        <div class="container">
-          <div class="section-header compact" data-reveal>
-            <span class="tagline">Por qué elegir BackupCode</span>
-            <h2>Tecnología que genera impacto real</h2>
-          </div>
-
-          <div class="reason-grid" data-reveal>
-            <article>
-              <h3>Infraestructura confiable</h3>
-              <p>Plataformas escalables y disponibles para tus aplicaciones críticas.</p>
-            </article>
-            <article>
-              <h3>Protección avanzada</h3>
-              <p>Seguridad de datos, ciberseguridad y respaldo de clase empresarial.</p>
-            </article>
-            <article>
-              <h3>Inteligencia de datos</h3>
-              <p>Analítica para convertir datos en decisiones estratégicas.</p>
-            </article>
-            <article>
-              <h3>Conectividad sin límites</h3>
-              <p>Redes cableadas e inalámbricas de alto rendimiento.</p>
-            </article>
-            <article>
-              <h3>Soporte experto 24/7</h3>
-              <p>Acompañamiento continuo con especialistas certificados.</p>
-            </article>
-          </div>
-
-          <div class="kpi-grid" data-reveal>
-            <div><strong>+200</strong><span>Clientes satisfechos</span></div>
-            <div><strong>+15</strong><span>Años de experiencia</span></div>
-            <div><strong>Cobertura</strong><span>De Arica a Punta Arenas</span></div>
-            <div><strong>24/7</strong><span>Monitoreo y soporte</span></div>
-            <div><strong>Partners</strong><span>Tecnología de clase mundial</span></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section partners" id="blog">
-        <div class="container">
-          <div class="section-header compact" data-reveal>
-            <span class="tagline">Nuestros partners tecnológicos</span>
-          </div>
-
-          <div class="partner-strip" data-reveal>
-            <span>Microsoft</span>
-            <span>Acronis</span>
-            <span>Dell Technologies</span>
-            <span>HPE Aruba</span>
-            <span>Ubiquiti</span>
-            <span>CommScope</span>
-            <span>Hikvision</span>
-            <span>Yealink</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="section cases" id="casos">
-        <div class="container">
-          <div class="section-header with-link" data-reveal>
-            <div>
-              <span class="tagline">Casos de éxito</span>
-              <h2>Soluciones que transforman negocios</h2>
-            </div>
-            <a href="#contacto">Ver todos los casos</a>
-          </div>
-
-          <div class="case-grid">
-            <article class="case-card" data-reveal>
-              <div class="case-cover case-a"></div>
-              <div class="case-content">
-                <h3>Dashboard gerencial para empresa logística</h3>
-                <p>Implementamos analítica de BI con visualización en tiempo real de indicadores clave.</p>
-                <a href="#contacto">Ver caso completo</a>
-              </div>
-            </article>
-
-            <article class="case-card" data-reveal>
-              <div class="case-cover case-b"></div>
-              <div class="case-content">
-                <h3>Red corporativa y fibra óptica para industria</h3>
-                <p>Diseño e implementación de infraestructura de red de alta disponibilidad.</p>
-                <a href="#contacto">Ver caso completo</a>
-              </div>
-            </article>
-
-            <article class="case-card" data-reveal>
-              <div class="case-cover case-c"></div>
-              <div class="case-content">
-                <h3>Infraestructura virtualizada y backup automatizado</h3>
-                <p>Plataforma de virtualización moderna con backup y recuperación ante desastres.</p>
-                <a href="#contacto">Ver caso completo</a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section pre-footer">
-        <div class="container" data-reveal>
-          <div class="pre-footer-card">
-            <h2>¿Listo para llevar tu tecnología al siguiente nivel?</h2>
-            <p>Hablemos de cómo podemos ayudarte a alcanzar tus objetivos de negocio.</p>
-            <a class="btn btn-white" href="#contacto">Agenda una reunión</a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer" id="contacto">
-      <div class="container footer-grid">
-        <div class="footer-brand">
-          <a class="brand" href="#inicio">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="BackupCode Soluciones IT: infraestructura, datos y seguridad para empresas modernas."
+    />
+    <title>BackupCode Soluciones IT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="site-wrap">
+      <header class="site-header">
+        <div class="container nav-row">
+          <a class="brand" href="#inicio" aria-label="BackupCode">
             <span class="brand-icon" aria-hidden="true">
-              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M32 4L53 16V48L32 60L11 48V16L32 4Z" stroke="currentColor" stroke-width="4"/>
-                <path d="M22 23V41L32 47L42 41V23L32 17L22 23Z" fill="currentColor" opacity="0.18"/>
-                <path d="M28 23L40 29V41" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              <svg
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M32 4L53 16V48L32 60L11 48V16L32 4Z"
+                  stroke="currentColor"
+                  stroke-width="4"
+                />
+                <path
+                  d="M22 23V41L32 47L42 41V23L32 17L22 23Z"
+                  fill="currentColor"
+                  opacity="0.18"
+                />
+                <path
+                  d="M28 23L40 29V41"
+                  stroke="currentColor"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
               </svg>
             </span>
             <span class="brand-label">
@@ -295,63 +51,462 @@
               <small>SOLUCIONES IT</small>
             </span>
           </a>
-          <p>Transformamos tecnología en valor para empresas que buscan crecer, innovar y ser más competitivas.</p>
-          <div class="social-row">
-            <a href="#inicio" aria-label="LinkedIn">in</a>
-            <a href="#inicio" aria-label="Instagram">ig</a>
+
+          <button
+            class="nav-toggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="menu"
+          ></button>
+
+          <nav id="menu" class="menu">
+            <a class="active" href="#inicio">Inicio</a>
+            <a href="#soluciones">Soluciones</a>
+            <a href="#casos">Casos de éxito</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#blog">Blog</a>
+            <a href="#contacto">Contacto</a>
+          </nav>
+
+          <a class="btn btn-primary nav-cta" href="#contacto"
+            >Agenda una reunión</a
+          >
+
+          <button
+            class="theme-toggle"
+            aria-label="Cambiar tema"
+            aria-pressed="false"
+            title="Cambiar tema"
+          >
+            <span
+              class="theme-toggle__icon theme-toggle__icon--sun"
+              aria-hidden="true"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="4"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07l1.77-1.77M17.3 6.7l1.77-1.77"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </span>
+            <span
+              class="theme-toggle__icon theme-toggle__icon--moon"
+              aria-hidden="true"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 1 0 10.5 10.5Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" id="inicio">
+          <div class="container hero-grid">
+            <div class="hero-copy" data-reveal>
+              <span class="tagline">Expertos en soluciones IT</span>
+              <h1>
+                Infraestructura, datos y seguridad para empresas
+                <span>modernas</span>
+              </h1>
+              <p>
+                Diseñamos, implementamos y gestionamos soluciones tecnológicas
+                que conectan, protegen y hacen crecer tu negocio.
+              </p>
+
+              <div class="hero-buttons">
+                <a class="btn btn-primary" href="#soluciones"
+                  >Conocer soluciones</a
+                >
+                <a class="btn btn-outline" href="#contacto"
+                  >Agenda una reunión</a
+                >
+              </div>
+
+              <ul class="quick-facts">
+                <li>+15 años de experiencia</li>
+                <li>Cobertura nacional</li>
+                <li>Soporte 24/7</li>
+                <li>Partners certificados</li>
+              </ul>
+            </div>
+
+            <div class="hero-media" data-reveal>
+              <div class="metric metric-a">
+                <span>Performance</span>
+                <strong>+32.4%</strong>
+              </div>
+              <div class="metric metric-b">
+                <span>Storage</span>
+                <strong>8.52 TB</strong>
+              </div>
+              <div class="metric metric-c">
+                <span>Resolución</span>
+                <strong>2.430</strong>
+              </div>
+              <div class="hero-platform">
+                <span class="ring"></span>
+                <span class="ring ring-2"></span>
+                <span class="badge-icon">
+                  <svg
+                    viewBox="0 0 100 100"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M50 7L82 25V61L50 79L18 61V25L50 7Z"
+                      stroke="white"
+                      stroke-width="6"
+                    />
+                    <path
+                      d="M37 34V62L50 69L63 62V34L50 27L37 34Z"
+                      fill="white"
+                      opacity="0.22"
+                    />
+                    <path
+                      d="M43 34L64 46V62"
+                      stroke="white"
+                      stroke-width="6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="soluciones">
+          <div class="container">
+            <div class="section-header" data-reveal>
+              <span class="tagline">Nuestras áreas de solución</span>
+              <h2>
+                Tres áreas, un mismo propósito: impulsar
+                <span>tu negocio.</span>
+              </h2>
+            </div>
+
+            <div class="service-grid">
+              <article class="service-card" data-reveal>
+                <div class="service-cover cover-analytics"></div>
+                <div class="service-body">
+                  <h3>Bcode<span>Analytics</span></h3>
+                  <p>
+                    Convertimos tus datos en decisiones inteligentes con
+                    analítica avanzada, BI e inteligencia artificial.
+                  </p>
+                  <ul>
+                    <li>Business Intelligence</li>
+                    <li>Analítica de Datos</li>
+                    <li>Inteligencia Artificial</li>
+                    <li>Dashboards y Visualización</li>
+                    <li>Gobierno y Calidad de Datos</li>
+                  </ul>
+                  <a href="#contacto">Explorar Analytics</a>
+                </div>
+              </article>
+
+              <button class="scroll-top" aria-label="Volver arriba">↑</button>
+
+              <article class="service-card" data-reveal>
+                <div class="service-cover cover-infra"></div>
+                <div class="service-body">
+                  <h3>Instalaciones</h3>
+                  <p>
+                    Diseñamos e implementamos infraestructura tecnológica
+                    robusta, segura y de alto rendimiento.
+                  </p>
+                  <ul>
+                    <li>Cableado Estructurado</li>
+                    <li>Redes Inalámbricas</li>
+                    <li>Fibra Óptica</li>
+                    <li>Control de Acceso</li>
+                    <li>CCTV y Video Vigilancia</li>
+                  </ul>
+                  <a href="#contacto">Ver infraestructura</a>
+                </div>
+              </article>
+
+              <article class="service-card" data-reveal>
+                <div class="service-cover cover-security"></div>
+                <div class="service-body">
+                  <h3>Soluciones TI</h3>
+                  <p>
+                    Soluciones integrales para garantizar continuidad, seguridad
+                    y eficiencia de tu operación.
+                  </p>
+                  <ul>
+                    <li>Servidores y Hardware</li>
+                    <li>Virtualización</li>
+                    <li>Backup y Recuperación</li>
+                    <li>Acronis Cyber Protect</li>
+                    <li>Microsoft 365 y Licenciamiento</li>
+                  </ul>
+                  <a href="#contacto">Conocer soluciones TI</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section reason" id="nosotros">
+          <div class="container">
+            <div class="section-header compact" data-reveal>
+              <span class="tagline">Por qué elegir BackupCode</span>
+              <h2>Tecnología que genera impacto real</h2>
+            </div>
+
+            <div class="reason-grid" data-reveal>
+              <article>
+                <h3>Infraestructura confiable</h3>
+                <p>
+                  Plataformas escalables y disponibles para tus aplicaciones
+                  críticas.
+                </p>
+              </article>
+              <article>
+                <h3>Protección avanzada</h3>
+                <p>
+                  Seguridad de datos, ciberseguridad y respaldo de clase
+                  empresarial.
+                </p>
+              </article>
+              <article>
+                <h3>Inteligencia de datos</h3>
+                <p>
+                  Analítica para convertir datos en decisiones estratégicas.
+                </p>
+              </article>
+              <article>
+                <h3>Conectividad sin límites</h3>
+                <p>Redes cableadas e inalámbricas de alto rendimiento.</p>
+              </article>
+              <article>
+                <h3>Soporte experto 24/7</h3>
+                <p>Acompañamiento continuo con especialistas certificados.</p>
+              </article>
+            </div>
+
+            <div class="kpi-grid" data-reveal>
+              <div><strong>+200</strong><span>Clientes satisfechos</span></div>
+              <div><strong>+15</strong><span>Años de experiencia</span></div>
+              <div>
+                <strong>Cobertura</strong><span>De Arica a Punta Arenas</span>
+              </div>
+              <div><strong>24/7</strong><span>Monitoreo y soporte</span></div>
+              <div>
+                <strong>Partners</strong
+                ><span>Tecnología de clase mundial</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section partners" id="blog">
+          <div class="container">
+            <div class="section-header compact" data-reveal>
+              <span class="tagline">Nuestros partners tecnológicos</span>
+            </div>
+
+            <div class="partner-strip" data-reveal>
+              <span>Microsoft</span>
+              <span>Acronis</span>
+              <span>Dell Technologies</span>
+              <span>HPE Aruba</span>
+              <span>Ubiquiti</span>
+              <span>CommScope</span>
+              <span>Hikvision</span>
+              <span>Yealink</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section cases" id="casos">
+          <div class="container">
+            <div class="section-header with-link" data-reveal>
+              <div>
+                <span class="tagline">Casos de éxito</span>
+                <h2>Soluciones que transforman negocios</h2>
+              </div>
+              <a href="#contacto">Ver todos los casos</a>
+            </div>
+
+            <div class="case-grid">
+              <article class="case-card" data-reveal>
+                <div class="case-cover case-a"></div>
+                <div class="case-content">
+                  <h3>Dashboard gerencial para empresa logística</h3>
+                  <p>
+                    Implementamos analítica de BI con visualización en tiempo
+                    real de indicadores clave.
+                  </p>
+                  <a href="#contacto">Ver caso completo</a>
+                </div>
+              </article>
+
+              <article class="case-card" data-reveal>
+                <div class="case-cover case-b"></div>
+                <div class="case-content">
+                  <h3>Red corporativa y fibra óptica para industria</h3>
+                  <p>
+                    Diseño e implementación de infraestructura de red de alta
+                    disponibilidad.
+                  </p>
+                  <a href="#contacto">Ver caso completo</a>
+                </div>
+              </article>
+
+              <article class="case-card" data-reveal>
+                <div class="case-cover case-c"></div>
+                <div class="case-content">
+                  <h3>Infraestructura virtualizada y backup automatizado</h3>
+                  <p>
+                    Plataforma de virtualización moderna con backup y
+                    recuperación ante desastres.
+                  </p>
+                  <a href="#contacto">Ver caso completo</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section pre-footer">
+          <div class="container" data-reveal>
+            <div class="pre-footer-card">
+              <h2>¿Listo para llevar tu tecnología al siguiente nivel?</h2>
+              <p>
+                Hablemos de cómo podemos ayudarte a alcanzar tus objetivos de
+                negocio.
+              </p>
+              <a class="btn btn-white" href="#contacto">Agenda una reunión</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer" id="contacto">
+        <div class="container footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="#inicio">
+              <span class="brand-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M32 4L53 16V48L32 60L11 48V16L32 4Z"
+                    stroke="currentColor"
+                    stroke-width="4"
+                  />
+                  <path
+                    d="M22 23V41L32 47L42 41V23L32 17L22 23Z"
+                    fill="currentColor"
+                    opacity="0.18"
+                  />
+                  <path
+                    d="M28 23L40 29V41"
+                    stroke="currentColor"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span class="brand-label">
+                <strong>BACKUPCODE</strong>
+                <small>SOLUCIONES IT</small>
+              </span>
+            </a>
+            <p>
+              Transformamos tecnología en valor para empresas que buscan crecer,
+              innovar y ser más competitivas.
+            </p>
+            <div class="social-row">
+              <a href="#inicio" aria-label="LinkedIn">in</a>
+              <a href="#inicio" aria-label="Instagram">ig</a>
+            </div>
+          </div>
+
+          <div>
+            <h3>Navegación</h3>
+            <ul>
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#nosotros">Nosotros</a></li>
+              <li><a href="#casos">Casos de éxito</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Soluciones</h3>
+            <ul>
+              <li><a href="#soluciones">BcodeAnalytics</a></li>
+              <li><a href="#soluciones">Instalaciones</a></li>
+              <li><a href="#soluciones">Soluciones TI</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Contacto</h3>
+            <ul>
+              <li>contacto@backupcode.cl</li>
+              <li>+56 9 1234 56 71</li>
+              <li>Puerto Montt, Chile</li>
+            </ul>
+          </div>
+
+          <div class="newsletter">
+            <h3>Suscríbete al newsletter</h3>
+            <p>Recibe noticias, tips y novedades sobre tecnología.</p>
+            <form>
+              <label for="news-email" class="sr-only">Correo electrónico</label>
+              <input
+                id="news-email"
+                type="email"
+                placeholder="Tu correo electrónico"
+              />
+              <button type="submit" aria-label="Enviar">→</button>
+            </form>
           </div>
         </div>
 
-        <div>
-          <h3>Navegación</h3>
-          <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#casos">Casos de éxito</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-          </ul>
+        <div class="container footer-bottom">
+          <span>© 2026 BackupCode SpA. Todos los derechos reservados.</span>
+          <div>
+            <a href="#inicio">Política de Privacidad</a>
+            <a href="#inicio">Términos y Condiciones</a>
+          </div>
         </div>
+      </footer>
+    </div>
 
-        <div>
-          <h3>Soluciones</h3>
-          <ul>
-            <li><a href="#soluciones">BcodeAnalytics</a></li>
-            <li><a href="#soluciones">Instalaciones</a></li>
-            <li><a href="#soluciones">Soluciones TI</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h3>Contacto</h3>
-          <ul>
-            <li>contacto@backupcode.cl</li>
-            <li>+56 9 1234 56 71</li>
-            <li>Puerto Montt, Chile</li>
-          </ul>
-        </div>
-
-        <div class="newsletter">
-          <h3>Suscríbete al newsletter</h3>
-          <p>Recibe noticias, tips y novedades sobre tecnología.</p>
-          <form>
-            <label for="news-email" class="sr-only">Correo electrónico</label>
-            <input id="news-email" type="email" placeholder="Tu correo electrónico">
-            <button type="submit" aria-label="Enviar">→</button>
-          </form>
-        </div>
-      </div>
-
-      <div class="container footer-bottom">
-        <span>© 2026 BackupCode SpA. Todos los derechos reservados.</span>
-        <div>
-          <a href="#inicio">Política de Privacidad</a>
-          <a href="#inicio">Términos y Condiciones</a>
-        </div>
-      </div>
-    </footer>
-  </div>
-
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>

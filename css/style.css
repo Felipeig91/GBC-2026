@@ -30,6 +30,12 @@ body {
   background: linear-gradient(180deg, var(--bg), #eef4ff 120%);
 }
 
+@media (max-width: 920px) {
+  body {
+    background: #ffffff !important;
+  }
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -684,6 +690,7 @@ a {
   overflow: hidden;
   flex: 0 0 auto;
 }
+}
 
 .theme-toggle::before {
   content: "";
@@ -950,7 +957,7 @@ body.dark .site-footer h3 {
   }
 
   .nav-cta {
-    margin-left: 0;
+    display: none;
   }
 
   .theme-toggle {
@@ -1058,5 +1065,9 @@ body.dark .site-footer h3 {
   .metric {
     min-width: 108px;
     padding: 8px 10px;
+  }
+
+  .theme-toggle {
+    display: none;
   }
 }

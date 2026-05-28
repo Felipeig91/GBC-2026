@@ -5,8 +5,8 @@
   --line-strong: #d6deec;
   --text: #0d1730;
   --muted: #5f6f8f;
-  --blue: #1f4cff;
-  --blue-dark: #1233bf;
+  --blue: #0099FF;
+  --blue-dark: #0077CC;
   --navy: #081637;
   --radius-sm: 12px;
   --radius-md: 18px;
@@ -78,6 +78,13 @@ a {
 .brand-icon svg {
   width: 100%;
   height: 100%;
+}
+
+.brand-logo {
+  width: auto;
+  height: 42px;
+  object-fit: contain;
+  border-radius: 6px;
 }
 
 .brand-label {
@@ -184,8 +191,8 @@ a {
 
 .btn-primary {
   color: white;
-  background: linear-gradient(135deg, var(--blue), #345dff);
-  box-shadow: 0 10px 24px rgba(31, 76, 255, 0.28);
+  background: linear-gradient(135deg, var(--blue), #00BBFF);
+  box-shadow: 0 10px 24px rgba(0, 153, 255, 0.28);
 }
 
 .btn-outline {

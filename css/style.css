@@ -1086,4 +1086,16 @@ body.dark .site-footer h3 {
   .theme-toggle {
     display: none;
   }
+
+  /* Forzar light mode en móvil siempre */
+  body.dark {
+    --bg: #ffffff;
+    --surface: #f9fafb;
+    --text: #0f172a;
+    --muted: #6b7280;
+    --blue: #0099FF;
+    --blue-dark: #0077CC;
+    --navy: #030411;
+    --line: rgba(13, 23, 48, 0.08);
+  }
 }

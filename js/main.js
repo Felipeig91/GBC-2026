@@ -73,7 +73,17 @@ if (scrollTopBtn) {
 }
 
 // Theme toggle (dark mode)
+function isMobileViewport() {
+  return window.innerWidth <= 560;
+}
+
 function applyTheme(theme) {
+  // En móvil, SIEMPRE light mode
+  if (isMobileViewport()) {
+    document.body.classList.remove('dark');
+    return;
+  }
+  
   if (theme === 'dark') document.body.classList.add('dark');
   else document.body.classList.remove('dark');
   if (themeToggle) {
@@ -85,6 +95,12 @@ function applyTheme(theme) {
 
 function initTheme() {
   try {
+    // En móvil, siempre light
+    if (isMobileViewport()) {
+      applyTheme('light');
+      return;
+    }
+    
     const saved = localStorage.getItem('site-theme');
     if (saved) {
       applyTheme(saved);
@@ -100,11 +116,25 @@ function initTheme() {
 
 if (themeToggle) {
   themeToggle.addEventListener('click', () => {
+    // No permitir cambio si es móvil
+    if (isMobileViewport()) return;
+    
     const isDark = document.body.classList.contains('dark');
     const next = isDark ? 'light' : 'dark';
     applyTheme(next);
     try { localStorage.setItem('site-theme', next); } catch (e) {}
   });
 }
+
+// Detectar cambios de viewport (redimensionamiento)
+let resizeTimeout;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(() => {
+    if (isMobileViewport()) {
+      document.body.classList.remove('dark');
+    }
+  }, 250);
+}, { passive: true });
 
 initTheme();

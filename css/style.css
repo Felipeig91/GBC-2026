@@ -1087,7 +1087,13 @@ body.dark .site-footer h3 {
     display: none;
   }
 
-  /* Forzar light mode en móvil siempre */
+  /* Ocultar imagen hero en mobile */
+  .hero-media {
+    display: none;
+  }
+
+  /* Forzar light mode siempre en móvil */
+  body,
   body.dark {
     --bg: #ffffff;
     --surface: #f9fafb;

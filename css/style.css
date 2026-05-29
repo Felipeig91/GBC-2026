@@ -300,20 +300,13 @@ a {
   position: relative;
   overflow: hidden;
   min-height: 490px;
-  background:
-    linear-gradient(140deg, #f9fbff, #edf2ff 34%, #09183c 140%),
-    radial-gradient(circle at right, rgba(31, 76, 255, 0.36), transparent 38%);
+  background-image: url('../img/gbc.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-.hero-media::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.08) 0 2px, transparent 2px 22px),
-    linear-gradient(90deg, rgba(6, 18, 47, 0.02), rgba(6, 18, 47, 0.6));
-  pointer-events: none;
-}
+
 
 .hero-platform {
   position: absolute;
@@ -716,7 +709,7 @@ a {
   overflow: hidden;
   flex: 0 0 auto;
 }
-}
+
 
 .theme-toggle::before {
   content: "";
@@ -784,9 +777,7 @@ body.dark {
   --navy: #030411;
 }
 
-body.dark .hero-media {
-  background: linear-gradient(140deg, #02030a, #09132a 60%), radial-gradient(circle at right, rgba(94, 161, 255, 0.12), transparent 38%);
-}
+
 
 body.dark .site-header {
   background: rgba(7, 9, 16, 0.9);
@@ -807,7 +798,6 @@ body.dark .scroll-top {
 }
 
 body.dark .hero-copy,
-body.dark .hero-media,
 body.dark .service-card,
 body.dark .case-card,
 body.dark .reason-grid article,

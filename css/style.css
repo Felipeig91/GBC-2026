@@ -1144,3 +1144,17 @@ body.dark .site-footer h3 {
     --line: rgba(13, 23, 48, 0.08);
   }
 }
+
+.hr-blurry {
+  height: 0;
+  border: none;
+  opacity: 0.25;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 0)
+  );
+  height: 1px; /* Controla el grosor de la línea */
+  margin: 24px 0;
+}

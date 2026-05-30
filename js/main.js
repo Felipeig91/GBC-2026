@@ -138,3 +138,100 @@ window.addEventListener('resize', () => {
 }, { passive: true });
 
 initTheme();
+
+/* ============ ENHANCED FORM FUNCTIONALITY ============ */
+// Floating label support for inputs with placeholder-shown
+const formInputs = document.querySelectorAll('.form-input');
+
+formInputs.forEach((input) => {
+  // Handle input value on initial load
+  if (input.value) {
+    input.classList.add('has-value');
+  }
+
+  // Handle input and change events
+  input.addEventListener('input', () => {
+    input.classList.toggle('has-value', input.value.length > 0);
+  });
+
+  input.addEventListener('change', () => {
+    input.classList.toggle('has-value', input.value.length > 0);
+  });
+
+  // Ensure select elements with values show filled state
+  if (input.tagName === 'SELECT') {
+    if (input.value) {
+      input.classList.add('has-value');
+    }
+    input.addEventListener('change', () => {
+      input.classList.toggle('has-value', input.value.length > 0);
+    });
+  }
+});
+
+// Form submission handling
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    // Basic validation
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const company = document.getElementById('company').value;
+    const service = document.getElementById('service').value;
+    const message = document.getElementById('message').value;
+
+    if (!name || !email || !company || !service || !message) {
+      alert('Por favor completa todos los campos requeridos');
+      return;
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert('Por favor ingresa un email válido');
+      return;
+    }
+
+    // Success feedback
+    const submitBtn = contactForm.querySelector('.btn-submit');
+    const originalText = submitBtn.innerHTML;
+    submitBtn.innerHTML = '<span>✓ Enviado correctamente</span>';
+    submitBtn.disabled = true;
+    submitBtn.style.opacity = '0.7';
+
+    // Reset after 3 seconds
+    setTimeout(() => {
+      submitBtn.innerHTML = originalText;
+      submitBtn.disabled = false;
+      submitBtn.style.opacity = '1';
+      contactForm.reset();
+      formInputs.forEach((input) => input.classList.remove('has-value'));
+    }, 3000);
+
+    // Here you would normally send the form data to a server
+    console.log('Form submitted:', {
+      name,
+      email,
+      company,
+      service,
+      message,
+      phone: document.getElementById('phone').value
+    });
+  });
+}
+
+// Keyboard navigation improvements
+formInputs.forEach((input, index) => {
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Tab') {
+      const inputs = Array.from(formInputs);
+      const nextInput = inputs[index + 1];
+      if (!e.shiftKey && nextInput) {
+        e.preventDefault();
+        nextInput.focus();
+      }
+    }
+  });
+});

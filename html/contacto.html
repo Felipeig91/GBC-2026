@@ -185,111 +185,264 @@
               </div>
               <form class="contact-form" id="contact-form">
                 <div class="form-group">
-                  <label for="name">Nombre completo *</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Tu nombre"
-                    required
-                  />
+                  <div class="form-field">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="form-input"
+                      required
+                    />
+                    <label for="name" class="form-label">Nombre completo</label>
+                    <span class="form-required">*</span>
+                    <span class="form-underline"></span>
+                  </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="email">Correo electrónico *</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="tu@email.com"
-                    required
-                  />
+                  <div class="form-field">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-input"
+                      required
+                    />
+                    <label for="email" class="form-label"
+                      >Correo electrónico</label
+                    >
+                    <span class="form-required">*</span>
+                    <span class="form-underline"></span>
+                  </div>
+                </div>
+
+                <div class="form-group form-group--half">
+                  <div class="form-field">
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      class="form-input"
+                    />
+                    <label for="phone" class="form-label">Teléfono</label>
+                    <span class="form-underline"></span>
+                  </div>
+                </div>
+
+                <div class="form-group form-group--half">
+                  <div class="form-field">
+                    <input
+                      type="text"
+                      id="company"
+                      name="company"
+                      class="form-input"
+                      required
+                    />
+                    <label for="company" class="form-label">Empresa</label>
+                    <span class="form-required">*</span>
+                    <span class="form-underline"></span>
+                  </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="phone">Teléfono</label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    placeholder="+56 9 XXXX XXXX"
-                  />
+                  <div class="form-field">
+                    <select
+                      id="service"
+                      name="service"
+                      class="form-input form-select"
+                      required
+                    >
+                      <option value="">Selecciona una opción</option>
+                      <option value="analytics">BcodeAnalytics</option>
+                      <option value="infra">Instalaciones</option>
+                      <option value="ti">Soluciones TI</option>
+                      <option value="otro">Otro</option>
+                    </select>
+                    <label for="service" class="form-label"
+                      >¿En qué área te interesa?</label
+                    >
+                    <span class="form-required">*</span>
+                    <span class="form-underline"></span>
+                  </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="company">Empresa *</label>
-                  <input
-                    type="text"
-                    id="company"
-                    name="company"
-                    placeholder="Nombre de tu empresa"
-                    required
-                  />
+                  <div class="form-field">
+                    <textarea
+                      id="message"
+                      name="message"
+                      class="form-input form-textarea"
+                      required
+                    ></textarea>
+                    <label for="message" class="form-label"
+                      >Cuéntanos sobre tu proyecto</label
+                    >
+                    <span class="form-required">*</span>
+                    <span class="form-underline"></span>
+                  </div>
                 </div>
 
-                <div class="form-group">
-                  <label for="service">¿En qué área te interesa? *</label>
-                  <select id="service" name="service" required>
-                    <option value="">Selecciona una opción</option>
-                    <option value="analytics">BcodeAnalytics</option>
-                    <option value="infra">Instalaciones</option>
-                    <option value="ti">Soluciones TI</option>
-                    <option value="otro">Otro</option>
-                  </select>
-                </div>
-
-                <div class="form-group">
-                  <label for="message">Mensaje *</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    placeholder="Cuéntanos sobre tu proyecto..."
-                    rows="5"
-                    required
-                  ></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary">
-                  Enviar solicitud
+                <button type="submit" class="btn btn-primary btn-submit">
+                  <span>Enviar solicitud</span>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
                 </button>
               </form>
             </div>
 
             <div class="contact-info-wrapper" data-reveal>
               <div class="contact-info-card">
-                <h3>Información de contacto</h3>
+                <h3>Ponte en contacto</h3>
+                <p class="contact-subtitle">
+                  Estamos aquí para ayudarte con tus necesidades tecnológicas
+                </p>
 
-                <div class="info-item">
-                  <strong>Teléfono</strong>
-                  <p>
-                    <a href="tel:+56912345671">+56 9 1234 56 71</a>
-                  </p>
+                <div class="info-item info-phone">
+                  <div class="info-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="info-content">
+                    <h4>Teléfono</h4>
+                    <a href="tel:+56912345671" class="info-link"
+                      >+56 9 1234 56 71</a
+                    >
+                  </div>
                 </div>
 
-                <div class="info-item">
-                  <strong>Email</strong>
-                  <p>
-                    <a href="mailto:contacto@backupcode.cl"
+                <div class="info-item info-email">
+                  <div class="info-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <rect x="2" y="4" width="20" height="16" rx="2" />
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </svg>
+                  </div>
+                  <div class="info-content">
+                    <h4>Email</h4>
+                    <a href="mailto:contacto@backupcode.cl" class="info-link"
                       >contacto@backupcode.cl</a
                     >
-                  </p>
+                  </div>
                 </div>
 
-                <div class="info-item">
-                  <strong>Dirección</strong>
-                  <p>Icalma 1030, Puerto Montt, Los Lagos, Chile</p>
+                <div class="info-item info-location">
+                  <div class="info-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                      />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                  </div>
+                  <div class="info-content">
+                    <h4>Dirección</h4>
+                    <p>Icalma 1030<br />Puerto Montt, Los Lagos<br />Chile</p>
+                  </div>
                 </div>
 
-                <div class="info-item">
-                  <strong>Horario de atención</strong>
-                  <p>Lunes a viernes: 9:00 - 18:00<br />Soporte 24/7</p>
+                <div class="info-item info-hours">
+                  <div class="info-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <polyline points="12 6 12 12 16 14" />
+                    </svg>
+                  </div>
+                  <div class="info-content">
+                    <h4>Horario</h4>
+                    <p>
+                      Lunes a viernes: 9:00 - 18:00<br /><span
+                        class="support-24"
+                        >Soporte 24/7</span
+                      >
+                    </p>
+                  </div>
                 </div>
 
-                <div class="info-item">
-                  <strong>Redes sociales</strong>
+                <div class="social-links-wrapper">
+                  <p class="social-label">Síguenos</p>
                   <div class="social-links">
-                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a
+                      href="#"
+                      aria-label="LinkedIn"
+                      class="social-icon linkedin"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      href="#"
+                      aria-label="Instagram"
+                      class="social-icon instagram"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <rect
+                          x="2"
+                          y="2"
+                          width="20"
+                          height="20"
+                          rx="5"
+                          ry="5"
+                        />
+                        <path
+                          d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                        />
+                        <circle cx="17.5" cy="6.5" r="1.5" />
+                      </svg>
+                    </a>
                   </div>
                 </div>
               </div>

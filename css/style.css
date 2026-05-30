@@ -641,7 +641,7 @@ a {
 }
 
 .pre-footer-card {
-  background: linear-gradient(128deg, #1237d0, #1f4cff 58%, #285af9);
+  background: linear-gradient(128deg, #0099FF, #0077CC 58%, #0088DD);
   border-radius: var(--radius-md);
   padding: 24px;
   color: white;

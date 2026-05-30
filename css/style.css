@@ -1280,6 +1280,32 @@ body.dark .social-icon:hover {
   box-shadow: 0 8px 16px rgba(0, 153, 255, 0.4);
 }
 
+/* ============ SCROLL INDICATOR ============ */
+.scroll-indicator {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  color: var(--blue);
+  animation: float 2.5s ease-in-out infinite;
+}
+
+.scroll-indicator svg {
+  width: 28px;
+  height: 28px;
+  stroke: var(--blue);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(12px);
+    opacity: 1;
+  }
+}
+
 /* ============ RESPONSIVE - CONTACT ============ */
 @media (max-width: 920px) {
   .contact-grid {

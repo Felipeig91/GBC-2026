@@ -815,6 +815,42 @@ body.dark .pre-footer-card {
   background: linear-gradient(128deg, #0b1635, #0f2a77 58%, #1c3db2);
 }
 
+/* Location Section */
+.location {
+  background: var(--surface);
+}
+
+.map-container {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(13, 23, 48, 0.15);
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Dark mode location */
+body.dark .location {
+  background: #071123;
+}
+
+body.dark .info-item strong {
+  color: #0099FF;
+}
+
+/* Responsive location */
+@media (max-width: 920px) {
+  .map-container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .map-container {
+    max-width: 100%;
+  }
+}
+
 body.dark .service-card,
 body.dark .case-card,
 body.dark .reason-grid article,

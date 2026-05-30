@@ -958,6 +958,16 @@ body.dark .site-footer h3 {
   gap: 14px;
 }
 
+.footer-bottom a {
+  color: #7282a0;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.footer-bottom a:hover {
+  color: var(--blue);
+}
+
 .sr-only {
   position: absolute;
   width: 1px;

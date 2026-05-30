@@ -839,6 +839,241 @@ body.dark .info-item strong {
   color: #0099FF;
 }
 
+/* Hero Simple (Booking Page) */
+.hero-simple {
+  padding: 80px 0;
+  background: linear-gradient(180deg, var(--bg), #eef4ff 120%);
+  text-align: center;
+}
+
+.hero-simple-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero-simple-content h1 {
+  margin-top: 12px;
+  margin-bottom: 16px;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: var(--text);
+}
+
+.hero-simple-content p {
+  font-size: 1.05rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+body.dark .hero-simple {
+  background: linear-gradient(180deg, #081637, #0a1f3c 120%);
+}
+
+body.dark .hero-simple-content h1 {
+  color: white;
+}
+
+/* Contact Main Section */
+.contact-main {
+  padding: 60px 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* Contact Form */
+.contact-form-wrapper {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: 0 4px 16px rgba(13, 23, 48, 0.08);
+}
+
+.contact-form-header h2 {
+  margin-top: 0;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+.contact-form-header p {
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  font-family: "Manrope", system-ui, sans-serif;
+  font-size: 0.95rem;
+  color: var(--text);
+  background: var(--surface);
+  transition: all 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(0, 153, 255, 0.1);
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form button {
+  width: 100%;
+  margin-top: 8px;
+}
+
+/* Contact Info */
+.contact-info-wrapper {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: 0 4px 16px rgba(13, 23, 48, 0.08);
+  height: fit-content;
+}
+
+.contact-info-card h3 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 1.5rem;
+  color: var(--text);
+}
+
+.info-item {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--line);
+}
+
+.info-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.info-item strong {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.info-item p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.info-item a {
+  color: var(--blue);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.info-item a:hover {
+  color: var(--blue-dark);
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+}
+
+.social-links a {
+  display: inline-block;
+  padding: 8px 16px;
+  background: linear-gradient(128deg, #0099FF, #0077CC);
+  color: white;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-2px);
+  color: white;
+}
+
+/* Dark Mode Booking Page */
+body.dark .contact-form-wrapper,
+body.dark .contact-info-wrapper {
+  background: #071025;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+body.dark .contact-form input,
+body.dark .contact-form select,
+body.dark .contact-form textarea {
+  background: #0a1430;
+  border-color: rgba(255, 255, 255, 0.04);
+  color: white;
+}
+
+body.dark .contact-form input:focus,
+body.dark .contact-form select:focus,
+body.dark .contact-form textarea:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(0, 153, 255, 0.15);
+}
+
+body.dark .contact-form-header h2,
+body.dark .contact-form label,
+body.dark .contact-info-card h3,
+body.dark .info-item strong {
+  color: white;
+}
+
+body.dark .contact-form-header p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+body.dark .info-item {
+  border-bottom-color: rgba(255, 255, 255, 0.04);
+}
+
+body.dark .info-item p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Responsive Contact Grid */
+@media (max-width: 920px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .contact-info-wrapper {
+    height: auto;
+  }
+}
+
 /* Responsive location */
 @media (max-width: 920px) {
   .map-container {

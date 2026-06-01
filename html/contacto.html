@@ -100,10 +100,64 @@
 
           <nav id="menu" class="menu">
             <a href="../index.html#inicio">Inicio</a>
-            <a href="../index.html#soluciones">Soluciones</a>
-            <a href="../index.html#casos">Casos de éxito</a>
-            <a href="../index.html#nosotros">Nosotros</a>
-            <a href="../index.html#blog">Blog</a>
+
+            <!-- Dropdown Soluciones -->
+            <div class="menu-item-dropdown">
+              <button
+                class="menu-item-toggle"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                Soluciones
+                <svg
+                  class="dropdown-icon"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="dropdown-menu">
+                <a href="../soluciones/bcode-analytics.html">BcodeAnalytics</a>
+                <a href="../soluciones/instalaciones.html">Instalaciones</a>
+                <a href="../soluciones/soluciones-ti.html">Soluciones TI</a>
+              </div>
+            </div>
+
+            <!-- Dropdown Casos de Éxito -->
+            <div class="menu-item-dropdown">
+              <button
+                class="menu-item-toggle"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                Casos de éxito
+                <svg
+                  class="dropdown-icon"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="dropdown-menu">
+                <a href="../casos/retail.html"
+                  >Transformación Digital - Retail</a
+                >
+                <a href="../casos/hospitalario.html">Sistema Hospitalario</a>
+                <a href="../casos/mineria.html">Infraestructura Minera</a>
+              </div>
+            </div>
+
+            <a href="../html/nosotros.html">Nosotros</a>
             <a class="active" href="contacto.html">Contacto</a>
           </nav>
 
@@ -506,19 +560,24 @@
             <h3>Navegación</h3>
             <ul>
               <li><a href="../index.html#inicio">Inicio</a></li>
-              <li><a href="../index.html#nosotros">Nosotros</a></li>
+              <li><a href="../html/nosotros.html">Nosotros</a></li>
               <li><a href="../index.html#casos">Casos de éxito</a></li>
-              <li><a href="../index.html#blog">Blog</a></li>
-              <li><a href="contacto.html">Contacto</a></li>
+              <li><a href="./contacto.html">Contacto</a></li>
             </ul>
           </div>
 
           <div>
             <h3>Soluciones</h3>
             <ul>
-              <li><a href="../index.html#soluciones">BcodeAnalytics</a></li>
-              <li><a href="../index.html#soluciones">Instalaciones</a></li>
-              <li><a href="../index.html#soluciones">Soluciones TI</a></li>
+              <li>
+                <a href="./soluciones/bcode-analytics.html">BcodeAnalytics</a>
+              </li>
+              <li>
+                <a href="./soluciones/instalaciones.html">Instalaciones</a>
+              </li>
+              <li>
+                <a href="./soluciones/soluciones-ti.html">Soluciones TI</a>
+              </li>
             </ul>
           </div>
 
@@ -557,8 +616,8 @@
             ></span
           >
           <div>
-            <a href="#inicio">Política de Privacidad</a>
-            <a href="#inicio">Términos y Condiciones</a>
+            <a href="../index.html#inicio">Política de Privacidad</a>
+            <a href="../index.html#inicio">Términos y Condiciones</a>
           </div>
         </div>
       </footer>

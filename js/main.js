@@ -5,6 +5,43 @@ const navLinks = document.querySelectorAll('.menu a');
 const themeToggle = document.querySelector('.theme-toggle');
 const scrollTopBtn = document.querySelector('.scroll-top');
 
+// Dropdown menu functionality
+const menuItemToggles = document.querySelectorAll('.menu-item-toggle');
+menuItemToggles.forEach((toggle) => {
+  toggle.addEventListener('click', (e) => {
+    e.preventDefault();
+    const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+    
+    // Close all other dropdowns
+    menuItemToggles.forEach((otherToggle) => {
+      if (otherToggle !== toggle) {
+        otherToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+    
+    // Toggle current dropdown
+    toggle.setAttribute('aria-expanded', String(!isExpanded));
+  });
+});
+
+// Close dropdowns when clicking outside
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.menu-item-dropdown')) {
+    menuItemToggles.forEach((toggle) => {
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  }
+});
+
+// Close dropdowns when clicking on a link
+document.querySelectorAll('.dropdown-menu a').forEach((link) => {
+  link.addEventListener('click', () => {
+    menuItemToggles.forEach((toggle) => {
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+});
+
 if ('IntersectionObserver' in window) {
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {

@@ -215,30 +215,31 @@ contacto.html (mismo archivo)
 
 ## 🎯 Características Actuales
 
-| Sección               | Estado         | Detalles                                          |
-| -------------------- | -------------- | ------------------------------------------------- |
-| Landing Page          | ✅ 95%         | Hero, servicios, casos, partners, footer          |
-| Página Contacto       | ✅ 90%         | Formulario 7 campos, info card, mapa             |
-| Página Nosotros       | ✅ 95%         | Misión/Visión, valores, equipo, timeline         |
-| Soluciones Pages      | ✅ 90%         | BcodeAnalytics, Instalaciones, Soluciones TI    |
-| Casos de Éxito        | ✅ 90%         | Retail, Hospitalario, Minería (SEO optimized)   |
-| Dropdowns Navbar      | ✅ 8/9 págs    | Soluciones + Casos de Éxito en todas las páginas |
-| Footer Links          | ✅ FIXED       | Navegación, Soluciones, bottom links corregidos  |
-| Responsive Design     | ✅ 95%         | 3 breakpoints: 560px, 920px, 1150px              |
-| Dark Mode             | ✅ 100%        | Toggle + localStorage persistence                 |
-| SEO Optimizado        | ✅ 85%         | Meta tags, OpenGraph, Twitter, canonical URLs    |
-| Nombres SEO           | ✅ FIXED       | caso-1 → retail, caso-2 → hospitalario, caso-3 → minería |
-| PWA Ready             | ✅ Setup       | manifest.json + metadata completa                |
-| Animaciones           | ✅ 100%        | Scroll reveals + hover effects + transiciones     |
-| Accesibilidad         | ✅ 92%         | ARIA labels, alt texts, semántica HTML5          |
-| Forms Validation      | ✅ 100%        | Validación cliente-side completa                 |
-| QA Testing            | ✅ COMPLETO    | 45+ tests passed, 6 issues documentados           |
+| Sección           | Estado      | Detalles                                                 |
+| ----------------- | ----------- | -------------------------------------------------------- |
+| Landing Page      | ✅ 95%      | Hero, servicios, casos, partners, footer                 |
+| Página Contacto   | ✅ 90%      | Formulario 7 campos, info card, mapa                     |
+| Página Nosotros   | ✅ 95%      | Misión/Visión, valores, equipo, timeline                 |
+| Soluciones Pages  | ✅ 90%      | BcodeAnalytics, Instalaciones, Soluciones TI             |
+| Casos de Éxito    | ✅ 90%      | Retail, Hospitalario, Minería (SEO optimized)            |
+| Dropdowns Navbar  | ✅ 8/9 págs | Soluciones + Casos de Éxito en todas las páginas         |
+| Footer Links      | ✅ FIXED    | Navegación, Soluciones, bottom links corregidos          |
+| Responsive Design | ✅ 95%      | 3 breakpoints: 560px, 920px, 1150px                      |
+| Dark Mode         | ✅ 100%     | Toggle + localStorage persistence                        |
+| SEO Optimizado    | ✅ 85%      | Meta tags, OpenGraph, Twitter, canonical URLs            |
+| Nombres SEO       | ✅ FIXED    | caso-1 → retail, caso-2 → hospitalario, caso-3 → minería |
+| PWA Ready         | ✅ Setup    | manifest.json + metadata completa                        |
+| Animaciones       | ✅ 100%     | Scroll reveals + hover effects + transiciones            |
+| Accesibilidad     | ✅ 92%      | ARIA labels, alt texts, semántica HTML5                  |
+| Forms Validation  | ✅ 100%     | Validación cliente-side completa                         |
+| QA Testing        | ✅ COMPLETO | 45+ tests passed, 6 issues documentados                  |
 
 ---
 
 ## � Historial de Cambios (v1.2.0 - May 31, 2026)
 
 ### ✅ Nuevas Páginas Agregadas
+
 - **html/nosotros.html** - Página profesional "About" con misión, visión, valores (6 cards), equipo (4 miembros), estadísticas (8 metrics) y timeline histórico
 - **html/soluciones/** - 3 páginas de soluciones detalladas
   - bcode-analytics.html (Dashboard, BI, Data Analytics)
@@ -250,12 +251,14 @@ contacto.html (mismo archivo)
   - mineria.html (renamed from caso-3.html) - Infraestructura Minera
 
 ### ✅ Mejoras de Navegación
+
 - Agregar **dropdowns** con Soluciones (3 opciones) en 8/9 páginas
 - Agregar **dropdowns** con Casos de Éxito (3 opciones) en todas las páginas
 - Actualizar rutas relativas en todas las páginas
 - Mobile hamburger menu funcional con ARIA labels
 
 ### ✅ Fixes de Links & Footer
+
 - **Corregir footer "Soluciones"** en contacto.html y nosotros.html
   - Cambiar de `../soluciones/` a `./soluciones/` (paths relativos correctos)
 - **Verificar todos los footer links** en 9 páginas
@@ -263,6 +266,7 @@ contacto.html (mismo archivo)
 - **Footer bottom links** (Política, Términos) corregidos
 
 ### ✅ SEO Optimization
+
 - **Renombrar caso-1.html → retail.html** (Transformación Digital - Retail)
 - **Renombrar caso-2.html → hospitalario.html** (Sistema Hospitalario)
 - **Renombrar caso-3.html → mineria.html** (Infraestructura Minera)
@@ -272,6 +276,7 @@ contacto.html (mismo archivo)
 - Nombres descriptivos para mejor indexación en Google
 
 ### 📋 QA Testing & Auditoría
+
 - **Auditoría exhaustiva** de todas las 9 páginas
 - **45+ tests passed** - navegación, links, formularios, responsive, SEO
 - **6 issues encontrados** y documentados en QA-REPORT-2026-05-31.md

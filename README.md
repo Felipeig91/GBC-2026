@@ -461,4 +461,10 @@ EXPOSE 80
 
 **Última actualización:** Mayo 2026  
 **Versión:** 1.0.0  
-**Estado:** NOT READY 
+**Estado:** NOT READY
+
+## 🌐 Publicación
+
+El proyecto está publicado en GitHub:
+
+https://github.com/Felipeig91/GBC-2026

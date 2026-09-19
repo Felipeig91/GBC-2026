@@ -131,6 +131,10 @@ function applyTheme(theme) {
 }
 
 function initTheme() {
+  if (!themeToggle) {
+    document.body.classList.remove('dark');
+    return;
+  }
   try {
     // En móvil, siempre light
     if (isMobileViewport()) {
